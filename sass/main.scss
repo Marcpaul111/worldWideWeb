@@ -1,0 +1,16 @@
+$primary: yellow;
+$secondary: purple;
+$warning: gray;
+$bg-color: #DED2B4;
+
+
+@import "../node_modules/bootstrap/scss/functions";
+@import "../node_modules/bootstrap/scss/variables";
+   $custom-theme-colors: (
+      "maincolor": violet,
+      "other": indigo
+   );
+
+   $theme-colors: map-merge($custom-theme-colors , $theme-colors );
+
+@import "../node_modules/bootstrap/scss/bootstrap.scss";
